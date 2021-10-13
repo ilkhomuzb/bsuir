@@ -1,61 +1,131 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="description" content="CV-Резюме студента"/>
-    <link href="./style.css" rel="stylesheet"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-    <title>ПЗ-1</title>
-  </head>
-  <body>
-    <div class="content">
-      <div class="flex">
-        <div class="left-content">
-          <div class="img">
-            <div class="avatar">
-              <img src="./img/zinilh.jpg" alt="фото">
-            </div>
-          <div class="title">
-            <h1>Ильхом Зинатуллин</h1>
-            <h3 class="subtitle">Студент БГУИР</h3>
-          </div>
-          </div>
-          <div class="hr">
-            <ul class="link">
-              <li>
-                <a href="https://www.mail.ru" title="Моя почта">zinatullin.ilkhom@mail.ru</a>
-              </li>
-              <li>
-                <a href="https://www.google.com/maps/d/embed?mid=1oXs9AmiPcUoKClx8wjg_O6DMFug&ie=UTF8&hl=ru&msa=0&ll=53.83956400000002%2C27.839354999999998&spn=4.668497%2C7.888184&z=6&output=embed" target="_blank" title="Показать на карте">Минск</a>
-              </li>
-              <li>
-                <a >+375 (25) 628-11-69</a>
-              </li>
-              <li>
-                <a href="#about"><i>Обо мне</i></a> 
-              </li>
-            </ul>
-            <div class="language">
-              <h2>Языки</h2>
-              <p>Русский</p>
-              <p>Узбекский</p>
-            </div>
-            <div class="study">
-              <h2>Образование</h2>
-              <p>ТУИТ-БГУИР</p>
-              <p><strong>Программируемые мобильные системы.</strong><br>«Программируемые мобильные системы» – единственная в Республике Беларусь специальность, обучающая программированию аппаратной части мобильных устройств и разработке программного обеспечения для встраиваемых мобильных систем.</p>
-            </div>
-            <div class="about" id="about">
-              <h2>Обо мне</h2>
-              <p>Full-stack developer</p>
-              <p>Я <strong>создаю</strong> продукты, которые <strong>нравятся</strong> людям</p>
-            </div>
-          </div>
-          </div>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ПЗ-2</title>
+  <style>
+    *{padding: 0; margin: 0;}
+    body{padding-bottom: 20px;}
+    h1{font-size: 4vw; margin: 20px 0;}
+    h2{font-size: 3vw; margin: 30px 0 20px 0;}
+    h3{display: flex;align-items: center;}
+    .mb{margin-bottom: 140px;}
+    .mb-10{margin-bottom: 10px;}
+    .text{display: none;}
+    .table{margin: 0 auto; width: 1271px;display: none;}
+    @media (min-width: 1270px) {.table{display: block;}.text{display: block;}}
+  </style>
+</head>
+<br>
+  <br class="wrapper">
+    <h1 align="center">Канцелярия для Вас и Ваших детей</h1>
+    <div align="center">
+      <picture>
+        <source media="(max-width: 767px)" srcset="./img/bg_mobile.jpg">
+        <source media="(min-width: 1271px)" srcset="./img/bg.jpg">
+        <source media="(min-width: 768px)" srcset="./img/bg_pad.jpg">
+        <img src="./img/bg.jpg" alt="картинка"/>
+      </picture>
     </div>
-  </body>
+    <div class="text">
+      <h2 align="center">Детские принадлежности</h2>
+      <p align="center">В нашем интернет магазине вы сможете найти большой выбор детских принадлежностей.</p>
+      <p align="center">Большой выбор фломастеров, карандашей, тетрадей</p><br/><br/><br/>
+    </div>
+    <div class="mb" align="center">
+      <picture>
+        <source media="(max-width: 1270px)" srcset="./img/no.jpg">
+        <img usemap="#image-map" src="./img/can.jpg" alt="картинка"/> 
+      </picture>
+    </div>
+    <map name="image-map">
+      <area alt="краски" title="Набор акварелей" href="#kras" coords="595,516,845,172" shape="rect">
+      <area alt="кисточки" title="кисточки" href="#kist" coords="1215,617,860,47" shape="rect">
+      <area alt="стаканчик" title="стаканчик" href="#stakan" coords="682,69,89" shape="circle">
+    </map>
+    <div class="table mb-10">
+        <h3 class="mb-10" align="left"><img width="43.3px" height="43.3px" src="./img/akvarel.png" alt="Набор акварелей">&#8194; Набор акварелей</h3>
+        <table width="1271px" id="kras" bgcolor="#D9F0E0" border="1" cellspacing="0">
+          <thead>
+            <tr height="41px">
+                <th>10 шт.</th>
+                <th>20 шт.</th>
+                <th>30 шт.</th>
+                <th>40 шт.</th>
+                <th>50 шт.</th>
+                <th>60 шт.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr height="41px" align="center">
+                <td>10 BYN</td>
+                <td>20 BYN</td>
+                <td>30 BYN</td>
+                <td>40 BYN</td>
+                <td>50 BYN</td>
+                <td>60 BYN</td>
+            </tr>
+          </tbody>
+        </table>
+    </div></br>
+    <div class="table mb-10">
+      <h3 class="mb-10" align="left">
+        <iframe scrolling="hidden" src="./img/Vector.png" width="55" height="50" align="left">
+        Ваш браузер не поддерживает плавающие фреймы!
+       </iframe>&#8194; Набор кисточек</h3>
+      <table width="1271px" id="kist" bgcolor="#D9F0E0" border="1" cellspacing="0">
+        <thead>
+          <tr height="41px">
+              <th>10 шт.</th>
+              <th>20 шт.</th>
+              <th>30 шт.</th>
+              <th>40 шт.</th>
+              <th>50 шт.</th>
+              <th>60 шт.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr height="41px" align="center">
+              <td>5 BYN</td>
+              <td>10 BYN</td>
+              <td>15 BYN</td>
+              <td>20 BYN</td>
+              <td>25 BYN</td>
+              <td>30 BYN</td>
+          </tr>
+        </tbody>
+      </table>
+  </div></br>
+  <div class="table mb-10">
+    <h3 class="mb-10" align="left">
+      <svg width="39" height="49" viewBox="0 0 35 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H34.9L30.8117 40.8778C30.5657 43.3383 29.4142 45.6196 27.5808 47.2789C25.7474 48.9382 23.3629 49.857 20.8901 49.8571H14.0098C11.5371 49.857 9.15259 48.9382 7.31919 47.2789C5.4858 45.6196 4.33432 43.3383 4.08828 40.8778L0 0ZM6.25707 12.4643L5.50921 4.98571H29.3908L28.6429 12.4643H6.25707ZM6.75564 17.45L9.04906 40.3818C9.17208 41.612 9.74782 42.7527 10.6645 43.5823C11.5812 44.4119 12.7735 44.8714 14.0098 44.8714H20.8901C22.1265 44.8714 23.3188 44.4119 24.2355 43.5823C25.1522 42.7527 25.7279 41.612 25.8509 40.3818L28.1443 17.45H6.75564Z" fill="black"/>
+      </svg>
+      &#8194; Стаканчики</h3>
+    <table width="1271px" id="stakan" bgcolor="#D9F0E0" border="1" cellspacing="0">
+      <thead>
+        <tr height="41px">
+            <th>10 шт.</th>
+            <th>20 шт.</th>
+            <th>30 шт.</th>
+            <th>40 шт.</th>
+            <th>50 шт.</th>
+            <th>60 шт.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr height="41px" align="center">
+            <td>3 BYN</td>
+            <td>5 BYN</td>
+            <td>7 BYN</td>
+            <td>9 BYN</td>
+            <td>11 BYN</td>
+            <td>13 BYN</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+  </div>
+</body>
 </html>
