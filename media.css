@@ -1,0 +1,352 @@
+@media (max-width: 319px)  {
+  .wrapper{
+    display: none;
+  }
+}
+@media (max-width: 1365px) and (min-width: 768px) {
+  .fitness{
+    width: 481px;
+    height: 649px;
+  }
+  h2{
+    font-size: 38px;
+  }
+  .nav-content-text{
+    font-size: 20px;
+  }
+  .header {
+    padding: 35px 20px;
+  }
+}
+
+@media (max-width: 1108px) and (min-width: 768px) {
+  .fitness{
+    width: 371px;
+    height: 439px;
+  }
+  h2{
+    font-size: 18px;
+  }
+  .nav-content-text{
+    font-size: 14px;
+  }
+  .advice{
+    height: 318px;
+  }
+  .advice-col-1{
+    padding: 20px 0;
+    width: 258px;
+    height: 239px;
+  }
+  .btn{
+    height: 37px;
+    padding-left: 21px;
+    font-size: 14px;
+  }
+  .advice-col-2-logo{
+    width: 145px;
+    height: 145px;
+    border-radius: 6px;
+    margin-bottom: 36px;
+  }
+  .advice-text{
+    width: 324px;
+  }
+  .image{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 1208px) and (min-width: 320px) {
+  .header{
+    padding: 32px 28px;
+  }
+  .header__contact{
+    margin-bottom: 11px;
+  }
+  .phone-text{
+    line-height: 16px;
+    font-size: 12px;
+  }
+  .nav{
+    height: 32px;
+    padding: 6px 51px;
+  }
+  .header__contact{
+    border: 2px solid #10133A;
+    width: 160px;
+    height: 43px;
+  }
+  .phone-svg{
+    width: 14px;
+    height: 14px;
+  }
+  .link-svg{
+    width: 22px;
+    height: 22px;
+  }
+  .link-profile{
+    margin-left: 5px;
+  }
+  .nav-content-text{
+    top: -60px;
+    line-height: 30px;
+    font-size: 22px;
+    width: 302px;
+    text-wrap: revert;
+  }
+  h2{
+    font-size: 32px;
+    line-height: 43px;
+    width: 302px;
+    text-wrap: revert;
+  }
+  .fitness{
+    position: relative;
+    min-height: 399px;
+    min-width: 310px;
+    z-index: 21;
+    top: -15px;
+  }
+
+  .fitness-bg{
+    background-image: url("./image/ipad-girl.png");
+  }
+  #our-trainers{
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .tr-text{
+    width: 320px;
+    line-height: 22px;
+    font-size: 16px;
+  }
+  .tp{
+    padding-top: 0;
+  }
+  #workout{
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+
+  .reviews{
+    padding-top: 24px;
+  }
+
+  .slider{
+    max-width: 900px;
+    padding-top: 24px;
+    padding-bottom:24px;
+  }
+
+  .slider-content{
+    max-width: 466px;
+  }
+
+  .user-image-1, .user-image-2{
+    margin: 0 auto 26px auto;
+    width: 106px;
+    height: 106px;
+  }
+
+  .slick-prev,
+  .slick-next
+  {
+    width: 50px;
+    height: 50px;
+  }
+
+  .slick-prev:before
+  {
+    height: 15px;
+  }
+
+  .slick-prev:after
+  {
+    height: 15px;
+    top: 15px;
+  }
+
+  .slick-next:before
+  {
+    height: 15px;}
+
+  .slick-next:after
+  {
+    height: 15px;
+    top: 15px;
+  }
+
+  .user-text{
+    max-width: 466px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .wave{
+    width: 96px;
+    height: 15px;
+    margin:  0 auto 20px auto;
+  }
+
+  .slick-list{
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 300px) {
+  .nav, .header__contact{
+    display: none;
+  }
+  .header{
+    background-color: white;
+    z-index: 40;
+  }
+  .header__contact{
+    justify-content: space-between;
+  }
+  .menu{
+    display: block;
+  }
+  .fitness{
+    height: 381px;
+    width: 298px;
+  }
+  .fitness-bg{
+    background-image: url("./image/mobile-girl.png");
+  }
+  .nav-content-text{
+    text-align: center;
+    top: 0;
+    margin-bottom: 40px;
+  }
+  .nav-content{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sign{
+    display: block;
+  }
+  .advice-col-1{
+    display: none;
+  }
+  .advice-col-2 {
+    height: auto;
+  }
+  .advice-col-2-logo{
+    width: 113px;
+    height: 113px;
+  }
+  .image{
+    width: 70px;
+    height: 70px;
+  }
+  .advice{
+    height: 478px;
+  }
+  .advice-text{
+    width: 271px;
+    height: 100px;
+  }
+  .advice-content{
+    padding-left: 10px;
+    padding-top: 54px;
+    display: block;
+  }
+  .advice-mobile-text{
+    display: block;
+  }
+
+  .mobile-btn{
+    display: flex;
+  }
+
+  .btn-active {
+    padding-left: 0;
+    border-left: none;
+    background: linear-gradient(90deg, #EF4621 0%, #F6CF45 100%);
+    opacity: 1;
+  }
+
+  .tp{
+    padding-top: 0;
+  }
+
+  .title-text, .tr-text{
+    text-align: center;
+  }
+
+  .title-text h3{
+    font-size: 20px;
+  }
+
+  .tr-text{
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .reviews{
+    padding-top: 21px;
+  }
+
+  .slider{
+    max-width: 300px;
+    padding-top: 24px;
+    padding-bottom:24px;
+  }
+
+  .slider-content{
+    max-width: 282px;
+  }
+
+  .user-image-1, .user-image-2{
+    margin: 0 auto 22px auto;
+    width: 74px;
+    height: 74px;
+  }
+
+  .slick-prev,
+  .slick-next
+  {
+    top: 20%;
+  }
+
+
+  .user-text{
+    max-width: 282px;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: justify;
+    padding: 10px;
+  }
+
+  .wave{
+    width: 96px;
+    height: 15px;
+    margin:  0 auto 20px auto;
+  }
+
+  .slick-list{
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+
+}
+
+@media (max-width: 664px) {
+  #our-trainers, #workout{
+    justify-content: center;
+  }
+  #our-trainers, #workout img{
+    margin: 10px;
+  }
+  .trainer{
+    padding: 5px;
+  }
+}
