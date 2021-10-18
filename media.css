@@ -195,6 +195,11 @@
     max-width: 900px;
     margin: 0 auto;
   }
+  .video{
+    padding: 51px 0;
+    max-width: 641px;
+    height: 377px;
+  }
 }
 
 @media (max-width: 767px) and (min-width: 300px) {
@@ -334,6 +339,12 @@
   .slick-list{
     max-width: 360px;
     margin: 0 auto;
+  }
+
+  .video{
+    padding: 42px 0;
+    max-width: 350px;
+    height: 206px;
   }
 
 
