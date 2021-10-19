@@ -485,3 +485,156 @@ iframe{
   height: 100%;
 }
 
+.form{
+  max-width: 856px;
+  margin: 90px auto 108px auto;
+}
+
+.input, .radio-btn{
+  width: 100%;
+  margin-bottom: 65px;
+}
+
+.input input{
+  width: 649px;
+  height: 85px;
+  border-radius: 50px;
+  color: #10133A;
+  background-color: #eae2e2;
+  font-size: 30px;
+  line-height: 41px;
+  padding-left: 41px;
+}
+
+.radio{
+  width: 649px;
+  color: #10133A;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.r-label{
+  font-size: 30px;
+}
+
+.r-input{
+  height: 43px;
+  width: 43px;
+  margin-right: 10px;
+  position: relative;
+  top: 8px;
+}
+
+.label{
+  display: inline-block;
+  font-size: 28px;
+  line-height: 38px;
+}
+
+.save{
+  height: 53px;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(90deg, #EF4621 0%, #F6CF45 100%);
+  border-radius: 50px;
+  padding: 0 40px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.save:focus{
+  box-shadow: inset 0px 4px 4px rgba(169, 60, 60, 0.25);
+}
+
+.save:hover{
+  box-shadow: 0px 4px 3px rgba(169, 60, 60, 0.25);
+}
+
+
+.select {
+  position: relative;
+  margin-bottom: 61px;
+}
+
+.select__head {
+  width: 660px;
+  border-radius: 50px;
+  padding: 14px 15px;
+  font-size: 24px;
+  line-height: 53px;
+  color: #10133A;
+  background-color: #eae2e2;
+  cursor: pointer;
+}
+
+.open{
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.select__head::after {
+  width: 18px;
+  height: 10px;
+  background: #eae2e2 url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.50495 5.78413L0.205241 1.25827C-0.0684138 0.970375 -0.0684138 0.503596 0.205241 0.215836C0.478652 -0.0719461 0.922098 -0.071946 1.19549 0.215837L5.00007 4.22052L8.80452 0.215953C9.07805 -0.0718292 9.52145 -0.0718292 9.79486 0.215953C10.0684 0.503736 10.0684 0.970492 9.79486 1.25839L5.49508 5.78425C5.35831 5.92814 5.17925 6 5.00009 6C4.82085 6 4.64165 5.928 4.50495 5.78413Z' fill='%2310133AFF'/%3E%3C/svg%3E%0A") no-repeat center / cover;
+  position: absolute;
+  right: 20px;
+  bottom: 50%;
+  transform: translateY(50%);
+  content: '';
+  display: block;
+  transition: .2s ease-in;
+}
+
+.select__head.open::after {
+  transform: translateY(50%) rotate(180deg);
+}
+
+.select__list {
+  display: none;
+  width: 690px;
+  position: absolute;
+  top: 100%;
+  padding: 0 0 10px 0;
+  right: 0;
+  background: #eae2e2;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  max-height: 205px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 100;
+  margin: 0;
+  line-height: 27px;
+  font-size: 20px;
+  color: #10133A;
+  overscroll-behavior: contain;
+}
+
+.select__list::-webkit-scrollbar {
+  width: 7px;
+  background-color: #F8F9FA;
+  padding: 5px;
+}
+
+.select__list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #D9D9D9;
+}
+
+.select__list .select__item {
+  position: relative;
+  border-top: 1px solid rgba(224, 229, 231, 0.5);
+  padding: 10px 15px;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.select__list .select__item:hover {
+  background: linear-gradient(90deg, #EF4621 0%, #F6CF45 100%);
+  color: white;
+}

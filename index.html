@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/image/fav-icon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/image/fav-icon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/image/fav-icon/favicon-16x16.png">
-  <link rel="manifest" href="/image/fav-icon/site.webmanifest">
+<!--  <link rel="manifest" href="/image/fav-icon/site.webmanifest">-->
   <link href="slick.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <link href="media.css" rel="stylesheet">
@@ -148,7 +148,7 @@
           <h3>Отзывы</h3>
         </div>
         <div class="slider single-item">
-          <div class="review-slider">
+          <article class="review-slider">
             <div class="slider-content">
               <div class="user-image-1">&nbsp;</div>
               <div class="wave">
@@ -161,8 +161,8 @@
                 только в  удовольствие. Спасибо Виктории за ее опыт, мотивацию, професиионализм. Продолжаю заниматься для поддержки формы.
               </p>
             </div>
-          </div>
-          <div class="review-slider">
+          </article>
+          <article class="review-slider">
             <div class="slider-content">
               <div class="user-image-2">&nbsp;</div>
               <div class="wave">
@@ -176,13 +176,57 @@
                 Просторные раздевалки.
                 Душевая и туалет чистые.</p>
             </div>
-          </div>
+          </article>
         </div>
       </section>
       <section class="video">
         <iframe
           src="https://www.youtube.com/embed/efJER_016S4?t=4">
         </iframe>
+      </section>
+      <section id="sign_up" class="sign_up container">
+        <div class="title-text d-flex justify-content-center m-auto">
+          <h3>Записаться на пробное бесплатное занятие</h3>
+        </div>
+        <form class="form" action="" method="post">
+          <div class="input d-flex justify-content-between align-items-center">
+            <label for="d_name" class="label">Имя*</label>
+            <input required id="d_name" type="text" value="" />
+          </div>
+          <div class="input d-flex justify-content-between align-items-center">
+            <label for="d_firs_name" class="label">Фамилия*</label>
+            <input required id="d_firs_name" type="text" value="" />
+          </div>
+          <div class="input d-flex justify-content-between align-items-center">
+            <label for="phone" class="label">Телефон*</label>
+            <input  id="phone" type="text" value="" />
+          </div>
+          <div class="select d-flex justify-content-between align-items-center">
+            <label for="phone" class="label">Цель</label>
+            <div class="select-content">
+              <input class="select__input" type="hidden" name="">
+              <div class="select__head">&nbsp;</div>
+              <ul class="select__list">
+                <li class="select__item">Похудеть</li>
+                <li class="select__item">Набрать массу</li>
+                <li class="select__item">Поддержка формы</li>
+                <li class="select__item">Специализированные тренировки</li>
+              </ul>
+            </div>
+          </div>
+          <div class="radio-btn d-flex justify-content-between">
+            <label class="label">Адрес*</label>
+            <div class="radio">
+              <input class="pointer r-input" type="radio" checked id="ch1"
+                     name="address" value="kom7">
+              <label class="pointer r-label" for="ch1">ул. Комсомольская 7</label><br>
+              <input class="pointer r-input" type="radio" id="ch2"
+                     name="address" value="yab1">
+              <label class="pointer r-label" for="ch2">пер. Яблочный 1</label><br>
+            </div>
+          </div>
+          <button class="save" type="submit"> Записаться </button>
+        </form>
       </section>
     </main>
   </div>
@@ -193,6 +237,7 @@
     <a class="menu-link" href="#">Контакты</a>
   </div>
   <script src="jquery.js"></script>
+  <script src="jquery.masked_input.min.js"></script>
   <script src="slick.min.js"></script>
   <script src="js.js"></script>
 </body>
