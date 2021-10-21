@@ -313,6 +313,10 @@
     top: 2px;
   }
 
+  .footer{
+    padding: 17px 0 17px 0;
+  }
+
 }
 
 @media (max-width: 767px) and (min-width: 300px) {
@@ -505,8 +509,8 @@
   }
 
   .save{
-    height: 39px;
-    font-size: 22px;
+    height: 44px;
+    font-size: 14px;
     line-height: 30px;
     padding: 0 30px;
   }
@@ -546,10 +550,15 @@
   }
 
   .contact-box1{
-    padding: 30px 0 30px 10px;
+    padding: 30px 0 50px 0;
     display: block;
     background: #F4F5FF;
     border-radius: 0;
+  }
+
+  .link-box{
+    height: 90px;
+    margin-bottom: 20px;
   }
 
   .con-text {
@@ -592,7 +601,13 @@
     margin-top: 55px;
     margin-bottom: 65px;
   }
+  .footer-logo{
+    display: block;
+  }
 
+  .footer{
+    padding: 11px 0 10px 0;
+  }
 
 }
 

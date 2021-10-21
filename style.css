@@ -286,13 +286,15 @@ h2{
   border-radius: 53px;
   width: 232px;
   height: 36px;
+  text-align: center;
+  padding-top: 10px;
   display: none;
   margin-bottom: 50px;
 }
 
 .sign a {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 19px;
   text-decoration: none;
   color: white;
@@ -693,5 +695,16 @@ iframe{
 }
 
 .contact-box1{
+  display: none;
+}
+.footer{
+  width: 100%;
+  background-color: #10133A;
+  padding: 33px 0 32px 0;
+}
+
+.footer-logo{
+  width: 59px;
+  margin: 0 auto;
   display: none;
 }
