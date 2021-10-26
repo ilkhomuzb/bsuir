@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import './fonts/opensans.css';
 * {
   vertical-align: baseline;
   font-weight: inherit;
@@ -707,4 +707,97 @@ iframe{
   width: 59px;
   margin: 0 auto;
   display: none;
+}
+
+a:hover{
+  color: #b9b5b5;
+}
+a:active{
+  color: gold;
+}
+
+.call{
+  position: absolute;
+  z-index: 14;
+  display: none;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(52, 52, 52, 0.56);
+}
+
+.call-box{
+  display: none;
+  position: absolute;
+  z-index: 15;
+  width: 821px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: transparent;
+}
+
+.d-block{
+  display: block;
+}
+
+.call-box-r{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #F4F5FF;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+}
+
+.close{
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-image: url("./image/cancel.png");
+  background-size: 100% 100%;
+  width: 25px;
+  height: 25px;
+}
+
+.modal-title{
+  padding-top: 54px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 49px;
+  text-align: center;
+}
+
+.modal-text{
+  padding: 67px 86px;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.input1{
+  width: 719px;
+  margin: 0 auto;
+  padding-bottom: 67px;
+}
+
+.input1 input{
+  width: 532px;
+  height: 85px;
+  border-radius: 50px;
+  color: #10133A;
+  background-color: #eae2e2;
+  font-size: 30px;
+  line-height: 41px;
+  padding-left: 25px;
+}
+
+.form1{
+  padding-bottom: 51px;
 }

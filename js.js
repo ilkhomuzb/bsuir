@@ -2,11 +2,17 @@ const btn1 = $( '.btn-1' );
 const btn2 = $( '.btn-2' );
 const btn3 = $( '.btn-3' );
 const btn4 = $( '.btn-4' );
+const call_btn = $( '.btn-z' );
+const call_btn1 = $( '#btn-z' );
+const callClass = $( '.call' );
+const callClass1 = $( '.call1' );
+const close = $( '#close' );
 const menu = $( '#burger-menu' );
 const image = $('#image');
 const menu_box = $('#burger-list');
 const menu_link = $('.menu-link');
 let isMenu = true;
+let isCall = true;
 menu.click( () => {
  if (isMenu) {
    menu_box.addClass('menu-list1');
@@ -19,18 +25,43 @@ menu.click( () => {
    isMenu = !isMenu;
  }
 });
-btn1.click(function() {
+btn1.click(() => {
   setAdvice(1);
 });
-btn2.click(function() {
+btn2.click(() => {
   setAdvice(2);
 });
-btn3.click(function() {
+btn3.click(() => {
   setAdvice(3);
 });
-btn4.click(function() {
+btn4.click(() => {
   setAdvice(4);
 });
+
+call_btn.click( () => {
+  modal();
+});
+
+call_btn1.click( () => {
+  modal();
+});
+
+close.click(() => {
+  modal();
+})
+
+const modal = () => {
+  if (isCall) {
+    callClass.addClass('d-block');
+    callClass1.addClass('d-block');
+    isCall = !isCall;
+  }
+  else {
+    callClass.removeClass('d-block')
+    callClass1.removeClass('d-block')
+    isCall = !isCall;
+  }
+}
 
 function setAdvice(num){
   switch (num) {
@@ -89,6 +120,9 @@ $('.single-item').slick({
 
 $(function(){
   $("#phone").mask("+375(99) 999-99-99");
+});
+$(function(){
+  $("#phone1").mask("+375(99) 999-99-99");
 });
 
 $('.dropdown-el').click(function(e) {
