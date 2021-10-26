@@ -693,6 +693,12 @@
   .form1{
     padding-bottom: 39px;
   }
+  .scrollTop{
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media (max-width: 664px) {

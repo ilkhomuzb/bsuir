@@ -5,14 +5,17 @@ const btn4 = $( '.btn-4' );
 const call_btn = $( '.btn-z' );
 const call_btn1 = $( '#btn-z' );
 const callClass = $( '.call' );
+const scrollTop = $( '.scrollTop' );
 const callClass1 = $( '.call1' );
 const close = $( '#close' );
+const wrapper = $( '.wrapper' );
 const menu = $( '#burger-menu' );
 const image = $('#image');
 const menu_box = $('#burger-list');
 const menu_link = $('.menu-link');
 let isMenu = true;
 let isCall = true;
+let isScrollTop = true;
 menu.click( () => {
  if (isMenu) {
    menu_box.addClass('menu-list1');
@@ -161,3 +164,19 @@ jQuery(($) => {
     }
   });
 });
+
+wrapper.scroll(function (e) {
+  if (e.target.scrollTop > 20) {
+    isScrollTop = true;
+    scrollTop.addClass('block');
+  }
+  else {
+    isScrollTop = false;
+    scrollTop.removeClass('block');
+  }
+});
+
+scrollTop.click(() => {
+  $(".wrapper").scrollTop(0);
+
+})
