@@ -1,131 +1,155 @@
-body, html {
-  width: 100%;
-  height: 100%;
+body,
+html {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  color: rgb(73, 68, 68);
+}
+
+.content {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.flex {
+  padding: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.img {
+  width: 100%;
+  padding-left: 20px;
+  display: flex;
   align-items: center;
-  animation-name: bg-anim;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
-  background: linear-gradient(-45deg, #3ca55c, #b5ac49, #56ab2f, #a8e063);
-  background-size: 400% 400%;
 }
 
-.box{
-  width: 520px;
-  height: 420px;
-  background-color: transparent;
-  border-radius: 10px;
-}
-
-.box__content{
+img {
+  width: 120px;
+  height: 120px;
   position: relative;
-  width: 94%;
-  height: 93%;
-}
-
-.circle{
   border-radius: 50%;
-  background-color: rgba(0, 128, 0, 0.85);
-  position: absolute;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-name: anim;
-  animation-duration: 14s;
+  box-shadow: 0 0 8px #1a1a1d;
 }
 
-.circle:first-child{
-  background-color: orange;
-  background-image: url("./image/gus.svg");
-  background-size: cover;
-  animation-delay: 0s;
-  width: 50px;
-  height: 50px;
+.title {
+  width: 50%;
+}
+h1 {
+  text-align: center;
+  font-size: calc((100vw - 30rem) / (80 - 30) * (1.5 - 1) + 1.2rem);
 }
 
-.circle:nth-child(2){
-  animation-delay: 300ms;
-  width: 45px;
-  height: 45px;
+.hr {
+  border-right: 2px solid #5c69da;
 }
 
-.circle:nth-child(3){
-  animation-delay: 600ms;
-  width: 45px;
-  height: 45px;
+ul {
+  list-style: square outside;
 }
 
-.circle:nth-child(4){
-  animation-delay: 900ms;
-  width: 42px;
-  height: 42px;
+li {
+  padding-left: 10px;
 }
 
-.circle:nth-child(5){
-  animation-delay: 1200ms;
-  width: 41px;
-  height: 41px;
+a {
+  position: relative;
+  top: -1.5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(66, 63, 63);
 }
 
-.circle:nth-child(6){
-  animation-delay: 1500ms;
-  width: 40px;
-  height: 40px;
+h2 {
+  color: #5c69da;
 }
 
-.circle:nth-child(7){
-  animation-delay: 1800ms;
-  width: 38px;
-  height: 38px;
+p {
+  text-align: left;
 }
 
-@keyframes anim {
+.left-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  text-align: center;
+  color: #5c69da;
+  font-family: Caveat, sans-serif;
+  font-size: 23px;
+}
+
+.avatar {
+  height: 120px;
+  position: relative;
+  width: 120px;
+}
+
+.avatar img {
+  border-radius: 9999px;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+@keyframes cycle-colors {
   0% {
-    left: 0;
-    top: 0;
+    border-color: hsl(0, 100%, 50%);
   }
   25% {
-    left: 100%;
-    top: 0;
-}
-  50%{
-    left: 100%;
-    top: 100%;
- }
-  75% {
-    left: 0;
-    top: 100%;
-}
-  100% {
-    left: 0;
-    top: 0;
-}
-}
-
-@keyframes bg-anim {
-  0% {
-    background-position: 0 50%;
+    border-color: hsl(90, 100%, 50%);
   }
   50% {
-    background-position: 100% 50%;
+    border-color: hsl(180, 100%, 50%);
+  }
+  75% {
+    border-color: hsl(270, 100%, 50%);
   }
   100% {
-    background-position: 0 50%;
+    border-color: hsl(360, 100%, 50%);
   }
 }
 
+@keyframes pulse {
+  to {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
 
+.avatar::before,
+.avatar::after {
+  animation: pulse 2s linear infinite;
+  border: #fff solid 8px;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  content: " ";
+  height: 140%;
+  left: -20%;
+  opacity: 0.6;
+  position: absolute;
+  top: -20%;
+  transform: scale(0.714);
+  width: 140%;
+  z-index: 1;
+}
 
+.avatar::after {
+  animation-delay: 1s;
+}
 
+.avatar:hover img {
+  content: url("./img/zinilh.jpg");
+}
 
+.avatar:hover::before,
+.avatar:hover::after {
+  animation: pulse 1s linear infinite, cycle-colors 6s linear infinite;
+}
 
-
-
-
-
-
-
-
+.avatar:hover::after {
+  animation-delay: 0.5s;
+}
